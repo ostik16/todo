@@ -122,6 +122,21 @@ body .todos .todo .actions .down {
   border-radius: 0 0 0 5px;
 }
 
+body .modal {
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  display: none;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  outline: 0;
+  background: rgba(0, 0, 0, 0.28);
+}
+
 @media (max-width: 768px) {
   body .input {
     padding: 0 .5rem;
@@ -143,6 +158,10 @@ body .todos .todo .actions .down {
   body .todos .todo {
     margin: 1rem 0;
     width: 100%;
+  }
+  body .todos .todo svg {
+    width: 25px;
+    height: 25px;
   }
 }
 /*# sourceMappingURL=App.css.map */
